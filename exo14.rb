@@ -8,7 +8,7 @@ end
 # exo_14.rb - Affiche uniquement les emails avec un nombre pair
 faux_emails.each do |email|
   numero = email.split('.')[2].to_i
-  if numero.even?
+  if numero.even? #vérifie si le numéro extrait de l'email est pair. La méthode even? retourne true si le nombre est pair et false sinon.
     puts email
   end
 end
